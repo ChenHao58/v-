@@ -1,0 +1,46 @@
+//-----------------------------例化
+XXXXX xxxxxx(
+	.clk(clk),
+	.rst_n(rst_n),
+	.(),
+	.(),
+	.()
+	);	
+//-----------------------------------------------------
+
+
+//----------------------------------模块化
+module XXXXXX(
+	input clk,
+	input rst_n,
+);
+endmodule
+
+//---------------------------------------
+always @(posedge clk or negedge rst_n)
+	if(!rst_n)
+	XXXXXXXXXXXXXXXXX
+	else 
+	XXXXXXXXXXXXXXXXXXXXXXX
+//---------------------------------------------
+
+
+//可以省略不重要项的casez------------------
+always @(*) begin
+    casez (in[3:0])
+        4'bzzz1: out = 0;   // in[3:1] can be anything
+        4'bzz1z: out = 1;
+        4'bz1zz: out = 2;
+        4'b1zzz: out = 3;
+        default: out = 0;	// 这个例子中，此项不可省略
+    endcase
+end 
+//-----------------------------------------------------
+
+
+
+
+//-------------------------------------------------------	
+
+
+	
